@@ -1,0 +1,7 @@
+{% extends 'layout.html' %} 
+    		{% block title %}My Page{% endblock %} {% block head %} {% parent %} {% endblock %}
+    		{% block styles %}<link rel="stylesheet" type="text/css" href="http://localhost:3000/styles/style-1ddd7.css"/>{% endblock %}
+    		{% block content %}
+		{% include '../widget/index.html' %} 
+		{% endblock %}
+		{% block scripts %}<script type='text/javascript'  src='http://localhost:3000/scripts/common/vendor-1ddd7.js'></script><script type='text/javascript'  src='http://localhost:3000/scripts/main-1ddd7.js'></script>{% endblock %}

@@ -34,7 +34,6 @@ public function getConnection(){
         }
 }
 //更新数据的方法
-//更新数据的方法
 public function updateDate($sql){
     //如果未连接的话就链接到数据库
     if($this->con == null){
