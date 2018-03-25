@@ -21,5 +21,5 @@ app.context.render = co.wrap(render({
   writeBody: false
 }))
 app.listen(CONFIG.get('port'), () => {
-  console.log(`Webset is starting at ${CONFIG.get('port')}`)
+  console.log(`Website is starting at ${CONFIG.get('port')}`)
 })

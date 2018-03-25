@@ -55,5 +55,5 @@ app.context.render = _co2.default.wrap((0, _koaSwig2.default)({
   writeBody: false
 }));
 app.listen(_config2.default.get('port'), function () {
-  console.log('Webset is starting at ' + _config2.default.get('port'));
+  console.log('Website is starting at ' + _config2.default.get('port'));
 });
