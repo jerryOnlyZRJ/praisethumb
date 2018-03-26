@@ -1,6 +1,6 @@
-.x-praise {
+.x-tag {
     display: flex;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -102,6 +102,61 @@
     border-left: 1px solid #b9511b;
 }
 
+
+/*小星星*/
+
+.star {
+    margin: 300px 50%;
+    position: relative;
+    display: block;
+    color: red;
+    width: 0px;
+    height: 0px;
+    z-index: 999;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    -moz-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    -o-transform: rotate(35deg);
+    cursor: pointer;
+}
+
+.star:before {
+    border-bottom: 80px solid red;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: "";
+    -webkit-transform: rotate(-35deg);
+    -moz-transform: rotate(-35deg);
+    -ms-transform: rotate(-35deg);
+    -o-transform: rotate(-35deg);
+}
+
+.star1 {
+    position: relative;
+    display: block;
+    color: red;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    border-left: 100px solid transparent;
+    -webkit-transform: rotate(-70deg);
+    -moz-transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    -o-transform: rotate(-70deg);
+}
+
 .num {
     display: block !important;
     -webkit-animation: neon2 1.5s ease-in-out alternate;
@@ -131,10 +186,4 @@
         -webkit-transform: translateY(0);
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
     }
-}
-
-html,
-body {
-    height: 100%;
-    overflow: hidden;
 }

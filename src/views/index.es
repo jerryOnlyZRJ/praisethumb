@@ -4,6 +4,7 @@ module.exports = function(templateParams) {
     var _html = `{% extends 'layout.html' %} 
     		{% block title %}My Page{% endblock %} 
                          {% block head %}
+                         <meta http-equiv="x-dns-prefetch-control" content="on">
                          <link rel="dns-prefetch" href="https://unpkg.com">
                          <link rel="dns-prefetch" href="http://cdn.bootcss.com">
                          <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
