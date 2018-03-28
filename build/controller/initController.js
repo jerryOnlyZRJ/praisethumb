@@ -16,6 +16,7 @@ var controllerInit = {
   init: function init(app, router) {
     app.use(router(function (_) {
       _.get('/index/index', _indexController2.default.index());
+      _.get('/index/star', _indexController2.default.star());
       _.get('/index/update', _indexController2.default.update());
     }));
   }

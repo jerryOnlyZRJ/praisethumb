@@ -1,14 +1,14 @@
-import {Star} from './thumb'
+import {Star} from './component'
 const f = new Star()
 xtag.register('x-star', {
     content: `<div class='star' id='star' >
     <div class='star1'></div></div>
-    <span class='hide' id='animation2'>+1</span>`,
+    <span class='hide' id='animation'>+1</span>`,
     methods: {
         praise: function() {
             let _this = this;
             f.clickAction();
-            let animation = _this.querySelector("#animation2");
+            let animation = _this.querySelector("#animation");
             animation.className = "hide num";
             setTimeout(function() {
                 animation.className = "hide"

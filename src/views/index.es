@@ -13,6 +13,6 @@ module.exports = function(templateParams) {
     		{% block content %}
 		{% include '../widget/index.html' %} 
 		{% endblock %}
-		{% block scripts %}${webAssetsHelp.scripts}{% endblock %}`;
+                         {% block scripts %}<script src="https://unpkg.com/axios/dist/axios.min.js"></script><script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/x-tag/1.5.11/x-tag-core-with-shadowdom.min.js"></script>${webAssetsHelp.scripts}{% endblock %}`;
     return _html;
 }

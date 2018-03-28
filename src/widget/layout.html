@@ -10,8 +10,17 @@
 </head>
 
 <body>
-    {% block content %}{% endblock %}
+    <a href="/index/index">thumb</a>
+    <a href="/index/star">star</a>
+    <div id="change-content">
+    	{% block content %}{% endblock %}
+    </div>
     {% block scripts %}{% endblock %}
+    <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+    <script type="text/javascript">
+            // 将响应数据替换至pjax容器中
+    	$(document).pjax('a', '#change-content')
+    </script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@ gulp.task('default', ['babel'], cb => {
 
 gulp.task('babel', cb => {
     pump([
-            gulp.src(['src/*/*.es', 'src/*.es', '!src/public/*.js']),
+            gulp.src(['src/**/*.es', 'src/*.es', '!src/public/*.js', '!src/views/*.es']),
             babel(),
             gulp.dest('./build')
         ],

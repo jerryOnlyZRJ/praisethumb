@@ -49,6 +49,17 @@ module.exports = {
             template: path.join(__dirname, 'src/widget/index.html'), // new 一个这个插件的实例，并传入相关的参数
             inject: false //静态资源插入位置 'body' | 'head' 默认为'body'
         }),
+        new HtmlWebpackPlugin({
+            filename: '../views/star.html',
+            inject: false, //静态资源插入位置 'body' | 'head' 默认为'body'
+            chunks: ['vendor', 'main'],   //传递给下方index.js的参数，需要插入的scripts
+            template: path.join(__dirname, 'src/views/star.js'), // new 一个这个插件的实例，并传入相关的参数
+        }),
+        new HtmlWebpackPlugin({
+            filename: '../widget/star.html',
+            template: path.join(__dirname, 'src/widget/star.html'), // new 一个这个插件的实例，并传入相关的参数
+            inject: false //静态资源插入位置 'body' | 'head' 默认为'body'
+        }),
         new ExtractTextPlugin("styles/style-[hash:5].css"),
         new CleanWebpackPlugin('build/public/*', {
             root: __dirname,

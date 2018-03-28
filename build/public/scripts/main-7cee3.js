@@ -92,9 +92,9 @@ window.add = function (num) {
 "use strict";
 
 
-var _thumb = __webpack_require__(0);
+var _component = __webpack_require__(0);
 
-var f = new _thumb.Thumb();
+var f = new _component.Thumb();
 xtag.register('x-praise', {
     content: '<div class="hand" id="thumb">\n    <div class="finger"></div>\n    <div class="finger"></div>\n    <div class="finger"></div>\n    <div class="finger"></div>\n    <div class="finger thumb"></div>\n    <div class="arm"></div>\n    </div>\n    <span class="hide" id="animation">+1</span>',
     methods: {
@@ -131,16 +131,16 @@ xtag.register('x-praise', {
 "use strict";
 
 
-var _thumb = __webpack_require__(0);
+var _component = __webpack_require__(0);
 
-var f = new _thumb.Star();
+var f = new _component.Star();
 xtag.register('x-star', {
-    content: '<div class=\'star\' id=\'star\' >\n    <div class=\'star1\'></div></div>\n    <span class=\'hide\' id=\'animation2\'>+1</span>',
+    content: '<div class=\'star\' id=\'star\' >\n    <div class=\'star1\'></div></div>\n    <span class=\'hide\' id=\'animation\'>+1</span>',
     methods: {
         praise: function praise() {
             var _this = this;
             f.clickAction();
-            var animation = _this.querySelector("#animation2");
+            var animation = _this.querySelector("#animation");
             animation.className = "hide num";
             setTimeout(function () {
                 animation.className = "hide";
